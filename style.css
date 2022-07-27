@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 0 auto;
+    display: flex;
+    max-width: 960px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    padding: 60px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 60px;
+
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 60px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0;
+
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    display: inline-block;
+    margin-top: 70px;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    width: 140px;
+    text-align: center;
+}
+
+.sedan a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv a {
+    color: hsl(184, 100%, 22%)
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.card a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-family: 'Lexend Deca', sans-serif !important;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px 20px
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .card {
+        margin: margin:15px 20px;
+
+    }
+}
